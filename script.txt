@@ -1,0 +1,10 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const blogPosts = document.querySelectorAll("article a");
+    
+    blogPosts.forEach(post => {
+        post.addEventListener("click", function(event) {
+            event.preventDefault();
+            alert("Blog post loading... (Feature coming soon!)");
+        });
+    });
+});
